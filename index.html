@@ -4,686 +4,651 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Prosevo Technologies</title>
     <style>
         * {
-  box-sizing: border-box;
-}
+            box-sizing: border-box;
+        }
 
-body{
-  margin: 0;
-}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-.bcim {
-  background-image: url(./pro\ pic.jpg);
-  width: 100%;
-  height: 650px
-}
+        .bcim {
+            background-image: url(https://prosevo.com/assets/officeimg.jpg);
+            width: 100%;
+            height: auto;
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 30px;
+        }
 
-.navbar {
-  width: 98%;
-  height: 50px;
-  background-color: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.39);
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: 10px;
+        .navbar {
+            width: 98%;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0.705);
+            border: 1px solid rgba(255, 255, 255, 0.39);
+            border-radius: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin: 10px auto;
+        }
 
-}
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
 
-.logo {
-  display: flex;
-  gap: 20px;
+        .options {
+            display: flex;
+            gap: 20px;
+            color: rgba(255, 255, 255, 0.645);
+        }
 
-}
+        .more {
+            width: 90%;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0.596);
+            border-radius: 10px;
+            margin: 70px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 20px;
+        }
 
-.options {
-  display: flex;
-  gap: 20px;
-  color: rgba(255, 255, 255, 0.645);
+        .left {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
 
-}
+        .right img {
+            width: 100%;
+            height: auto;
+            max-width: 500px;
+            display: block;
+            margin: 0 auto;
+        }
 
-.more {
-  width: 90%;
-  height: 400px;
-  background-color: rgba(255, 255, 255, 0.12);
-  border-radius: 10px;
-  margin-left: 58px;
-  margin-top: 70px;
-  margin-bottom: 70px;
-  display: flex;
-  justify-content: space-evenly;
-}
+        .page2 {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
 
-.left {
-  text-align: center;
-  color: white;
-}
+        .text {
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
 
-.page2 {
-  /* width: 100%;
-  height:700px;
-background-color:#fff8e1; */
-  display: flex;
-  padding-left: 110px;
-  padding-top: 100px;
-}
+        .atprosevo {
+            padding-top: 20px;
+        }
 
-.text {
-  font-weight: 400;
-  font-size: larger;
-}
+        .parent2 {
+            width: 100%;
+            height: auto;
+            background-color: #fff8e1;
+            padding-bottom: 30px;
+        }
 
-.atprosevo {
-  padding-top: 100px;
-}
+        .pic img {
+            width: 100%;
+            height: auto;
+            max-width: 500px;
+            display: block;
+            margin: 20px auto 0;
+        }
 
-.parent2 {
-  width: 100%;
-  height: 1200px;
-  background-color: #fff8e1;
-}
+        .boxx {
+            width: 100%;
+            height: auto;
+            background-color: #fff8e1;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            border: 2px solid rgba(0, 0, 0, 0.253);
+            margin-bottom: 20px;
+        }
 
-.boxx {
-  width: 480px;
-  height: 180px;
-  background-color: #fff8e1;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  padding-left: 30px;
-  border: 2px solid rgba(0, 0, 0, 0.253);
+        .img {
+            width: 60px;
+            height: 60px;
+            background-color: #dbaa4f;
+            border-radius: 15px;
+            flex-shrink: 0;
+        }
 
-}
+        .box1, .box2 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
 
-.img {
-  width: 90px;
-  height: 80px;
-  background-color: #dbaa4f;
-  border-radius: 20px;
-}
+        .box {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
 
-.box1 {
-  display: flex;
-  gap: 20px;
-}
+        .serice {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
 
-.box2 {
-  display: flex;
-  gap: 20px;
-}
+        .page4 {
+            background-image: url(https://prosevo.com/assets/officeimg.jpg);
+            width: 100%;
+            height: auto;
+            background-size: cover;
+            background-position: center;
+            padding: 30px 0;
+        }
 
-.box {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-left: 190px;
-  padding-top: 30px;
-}
+        .blurbox {
+            width: 90%;
+            height: auto;
+            background-color: rgba(255, 255, 255, 0.363);
+            border-radius: 10px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
 
-.serice {
-  text-align: center;
-  padding-top: 80px;
-}
+        .aa {
+            width: 100%;
+            height: auto;
+            background-color: #dbaa4f;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
 
-.page4 {
-  background-image: url(./pro\ pic.jpg);
-  width: 100%;
-  height: 690px;
-  padding-top: 50px;
-}
+        .leftfull, .rightfull {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
 
-.blurbox {
-  width: 90%;
-  height: 550px;
-  background-color: rgba(255, 255, 255, 0.363);
-  border-radius: 10px;
-  margin-left: 56px;
-  text-align: center;
-  margin-bottom: 70px;
-}
+        .fullstack {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
 
-.aa {
-  width: 480px;
-  height: 200px;
-  background-color: #dbaa4f;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-}
+        .immg img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
 
-.leftfull {
-  display: flex;
+        .page5 {
+            width: 100%;
+            height: auto;
+            background-color: #fff8e1;
+            padding: 30px 0;
+        }
 
-  gap: 20px;
-}
+        .driving {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
 
-.rightfull {
-  display: flex;
+        .dr {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
 
-  gap: 20px;
-}
+        .class11 img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
 
-.fullstack {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-left: 110px;
-}
+        .driving div {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            background-color: #383838;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            margin: 10px 0;
+        }
 
-.page5 {
-  width: 100%;
-  height: 1100px;
-  background-color: #fff8e1;
-}
+        .page6 {
+            background-image: url(https://prosevo.com/assets/officeimg.jpg);
+            width: 100%;
+            height: auto;
+            background-size: cover;
+            background-position: center;
+        }
 
-.driving {
-  display: flex;
+        .blurparent {
+            width: 100%;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0.53);
+            padding: 30px 0;
+        }
 
-  justify-content: space-evenly;
-}
+        .footer {
+            width: 100%;
+            height: auto;
+            background-color: #383838;
+            padding: 30px 0;
+        }
 
-.dr {
-  display: flex;
-  flex-direction: column;
-  gap: 13px;
+        .lastfull {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 20px;
+            gap: 30px;
+        }
 
+        .location {
+            color: #f6f3f3;
+            text-align: center;
+        }
 
-}
+        .form {
+            color: #ffffff;
+        }
 
-.page6 {
-  background-image: url(./pro\ pic.jpg);
-  width: 100%;
-  height: 550px;
-}
+        .foottext {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            text-align: center;
+        }
 
-.blurparent {
-  width: 100%;
-  height: 550px;
-  background-color: rgba(0, 0, 0, 0.53);
-}
+        .footri {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 20px;
+        }
 
-.footer {
-  width: 100%;
-  height: 250px;
-  background-color: #383838;
-}
+        .footle {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
 
-.lastfull {
-  display: flex;
-  justify-content: space-evenly;
-}
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border-radius: 5px;
+            border: none;
+        }
 
-.location {
-  color: #f6f3f3;
-}
+        button {
+            background-color: #dbaa4f;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
 
-.form {
-  color: #ffffff;
-}
+        hr {
+            width: 90%;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: none;
+            margin: 20px auto;
+        }
 
-.foottext {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 50px;
-}
+        /* Desktop styles */
+        @media (min-width: 768px) {
+            .navbar {
+                flex-direction: row;
+                height: 50px;
+            }
+            
+            .options {
+                flex-direction: row;
+            }
+            
+            .more {
+                flex-direction: row;
+                height: 400px;
+            }
+            
+            .left {
+                width: 50%;
+                text-align: left;
+            }
+            
+            .right {
+                width: 50%;
+            }
+            
+            .page2 {
+                flex-direction: row;
+                padding-left: 110px;
+                padding-top: 100px;
+            }
+            
+            .atprosevo {
+                width: 50%;
+                padding-top: 100px;
+            }
+            
+            .pic {
+                width: 50%;
+            }
+            
+            .box1, .box2 {
+                flex-direction: row;
+            }
+            
+            .boxx {
+                width: 48%;
+            }
+            
+            .leftfull, .rightfull {
+                flex-direction: row;
+            }
+            
+            .aa {
+                width: 48%;
+                flex-direction: row;
+                height: 200px;
+            }
+            
+            .driving {
+                flex-direction: row;
+            }
+            
+            .class11 img, .driving div {
+                width: 30%;
+            }
+            
+            .lastfull {
+                flex-direction: row;
+                padding-top: 100px;
+            }
+            
+            .foottext {
+                flex-direction: row;
+                padding-top: 50px;
+            }
+            
+            .footri {
+                flex-direction: row;
+                gap: 50px;
+            }
+        }
 
-.footri {
-  display: flex;
-  gap: 50px;
-}
-
-.footle {
-  display: flex;
-  gap: 10px;
-}
-.lastfull{
-  padding-top: 100px;
-
-}   
-@media screen and (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      height: auto;
-      padding: 10px;
-    }
-  
-    .options {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      font-size: 14px;
-    }
-  
-    .more {
-      flex-direction: column;
-      align-items: center;
-      margin-left: 10px;
-      width: 95%;
-      height: auto;
-      text-align: center;
-    }
-  
-    .right img {
-      width: 100%;
-      height: auto;
-    }
-  
-    .left h1, .left p {
-      font-size: 16px;
-    }
-  
-    .page2 {
-      flex-direction: column;
-      padding: 20px;
-    }
-  
-    .pic img {
-      width: 100%;
-      height: auto;
-    }
-  
-    .box {
-      padding-left: 20px;
-      padding-right: 20px;
-      align-items: center;
-    }
-  
-    .boxx {
-      flex-direction: column;
-      width: 100%;
-      height: auto;
-      padding: 10px;
-      text-align: center;
-    }
-  
-    .fullstack {
-      padding-left: 20px;
-    }
-  
-    .leftfull, .rightfull {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .aa {
-      flex-direction: column;
-      width: 100%;
-      height: auto;
-      padding: 10px;
-    }
-  
-    .driving {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .driving > div {
-      width: 90% !important;
-      margin-bottom: 20px;
-    }
-  
-    .form input, .form textarea, .form button {
-      width: 100% !important;
-    }
-  
-    .lastfull {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      padding: 20px;
-    }
-  
-    .foottext {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      padding: 20px;
-    }
-  
-    .footri {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    
-    }
-  
-    .footle {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
+        @media (min-width: 992px) {
+            .box {
+                padding-left: 190px;
+                padding-top: 30px;
+            }
+            
+            .fullstack {
+                padding-left: 110px;
+            }
+        }
     </style>
 </head>
 
-<body style="background-image: url(https://prosevo.com/assets/officeimg.jpg);">
+<body>
     <div class="parent">
         <div class="bcim">
-            <div class="page1" style="background-image: url(https://prosevo.com/assets/officeimg.jpg);">
-                <div class="navbar" style="background-color: rgba(0, 0, 0, 0.705);">
-                    <div class="logo"><img src="https://prosevo.com/assets/logoprosevo.png" alt=""
-                            style="width: 30px; height: 30px; margin-top: 30px;">
-                        <h1 style="color: #dbaa4f;">prosevo.</h1>
+            <div class="page1">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="https://prosevo.com/assets/logoprosevo.png" alt="" style="width: 30px; height: 30px;">
+                        <h1 style="color: #dbaa4f; font-size: 1.5rem;">prosevo.</h1>
                     </div>
                     <div class="options">
                         <h4 style="color: #dbaa4f;">Home</h4>
                         <h4>Services</h4>
                         <h4>Solutions</h4>
                         <h4>Training</h4>
-                        <h4>Acadamy</h4>
+                        <h4>Academy</h4>
                         <h4>Gallery</h4>
                         <h4>Contact</h4>
                     </div>
                 </div>
-                <div class="more" style="background-color: rgba(0, 0, 0, 0.596);">
+                <div class="more">
                     <div class="left">
-                        <h1>Identify the Problem, find out the Solution <br>
-                            and Evolve your business</h1>
-                        <p style="color:#dfdddb;font-size:20px;">Evolve your business globally with the right software
-                            solution</p> <br>
-
-                        <p> At our company, we provide innovative and customized software solutions to help your
-                            <br>business grow and succeed in the global market. Our expertise spans across various
-                            <br>industries, ensuring that we understand your unique challenges and deliver the perfect
-                            <br> solutions.
-                        </p> <button style="width: 100px;height: 30px;border-radius: 5px;">More
-                            info</button>
+                        <h1>Identify the Problem, find out the Solution and Evolve your business</h1>
+                        <p style="color:#dfdddb;font-size:1.2rem;">Evolve your business globally with the right software solution</p>
+                        <p>At our company, we provide innovative and customized software solutions to help your business grow and succeed in the global market. Our expertise spans across various industries, ensuring that we understand your unique challenges and deliver the perfect solutions.</p>
+                        <button>More info</button>
                     </div>
-                    <div class="right"><img src="https://prosevo.com/assets/mainimg2.png" alt=""
-                            style="width: 500px;height: 500px;"></div>
-                </div>
-                <div class="parent2">
-                    <div class="page2">
-                        <div class="atprosevo">
-                           <u> <h1  style="margin-top: -100px; text-align: center;">PROSEVO TECHNOLGIES</h1></u>
-                            <p class="text">At Prosevo, we embody the entrepreneurial spirit, fortified by over 12 years
-                                of <br> rich industry experience within our team. We go beyond merely developing <br>
-                                software and ERP solutions; we architect transformative Odoo-based <br> systems,
-                                cutting-edge websites, intuitive mobile applications, and dynamic <br> e-commerce
-                                platforms designed to redefine industries and empower businesses.</p>
-                            <p class="text">Our expertise extends to digital marketing, enabling brands to amplify
-                                <br>their online presence and engage effectively with their audiences. <br> With a
-                                commitment to delivering scalable, innovative, and user-focused <br>solutions, we ensure
-                                every project is tailored to meet the unique <br>needs of our clients, driving growth
-                                and unlocking new opportunities
-                            </p>
-                            <h3 style="font-style: italic; font-weight: 700;color: #dbaa4f ;">Dive into a world where
-                                innovation never pauses, and our <br> commitment to excellence is coded into every
-                                solution we deliver.</h3>
-                        </div>
-                        <div class="pic"><img src="https://prosevo.com/_next/static/media/imgoffice03.f886e971.jpg"
-                                alt="" style="width: 500px;height: 450px;"></div>
-
-
-
-
-
-
+                    <div class="right">
+                        <img src="https://prosevo.com/assets/mainimg2.png" alt="">
                     </div>
-                    <div class="page3">
-                        <div class="serice">
-                            <h1 style="color:  #dbaa4f;">Services</h1>
-                            <p>At Prosevo, we provide tailored solutions to meet your unique needs.</p>
-                        </div>
-                        <div class="box">
-                            <div class="box1">
-                                <div class="boxx">
-                                    <div class="img"></div>
-                                    <div class="odoo">
-                                        <h2>Odoo ERP Implementation & Customization
-                                        </h2>
-                                        <p>Empower your buisiness with a fully <br>customized odoo erp solution... </p>
-                                    </div>
-                                </div>
-                                <div class="boxx">
-                                    <div class="img"></div>
-                                    <div class="odoo">
-                                        <h2>Odoo ERP Implementation & Customization
-                                        </h2>
-                                        <p>Empower your buisiness with a fully <br>customized odoo erp solution... </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="box2">
-                                <div class="boxx">
-                                    <div class="img"></div>
-                                    <div class="odoo">
-                                        <h2>Odoo ERP Implementation & Customization
-                                        </h2>
-                                        <p>Empower your buisiness with a fully <br>customized odoo erp solution... </p>
-                                    </div>
-                                </div>
-                                <div class="boxx">
-                                    <div class="img"></div>
-                                    <div class="odoo">
-                                        <h2>Odoo ERP Implementation & Customization
-                                        </h2>
-                                        <p>Empower your buisiness with a fully <br>customized odoo erp solution... </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-                <div class="page4">
-                    <div class="blurbox">
-                        <div>
-                            <h1>Training <span style=" color:#dbaa4f ;"> & </span>Bootcamps</h1>
-                            <p>At Prosevo, we provide tailored solutions to meet your unique needs. Our comprehensive
-                                <br> Courses support you from conception to execution and beyond.
-                            </p>
-                        </div>
-                        <div class="fullstack">
-                            <div class="leftfull">
-                                <div class="aa">
-                                    <div class="immg" ><img
-                                            src="https://prosevo.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwebimg.6e5d774b.png&w=1920&q=75"
-                                            alt="" style="width: 150px;height: 150px;"></div>
-                                    <div class="fulll">
-                                        <h3>Full-Stack Web Development with <br> MERN & Smart Automation</h3>
-                                        <p>Learn MongoDB, Express.js, React.js, and <br> Node.js to build full-stack
-                                            applications, <br>integrating automation and AI-powered <br> web
-                                            interactions</p>
-                                    </div>
-                                </div>
-                                <div class="aa">
-                                    <div class="immg"><img
-                                            src="https://prosevo.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwebimg.6e5d774b.png&w=1920&q=75"
-                                            alt="" style="width: 150px;height: 150px;"></div>
-                                    <div class="fulll">
-                                        <h3>Full-Stack Web Development with <br> MERN & Smart Automation</h3>
-                                        <p>Learn MongoDB, Express.js, React.js, and <br> Node.js to build full-stack
-                                            applications, <br>integrating automation and AI-powered <br> web
-                                            interactions</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="rightfull">
-                                <div class="aa">
-                                    <div class="immg"><img
-                                            src="https://prosevo.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwebimg.6e5d774b.png&w=1920&q=75"
-                                            alt="" style="width: 150px;height: 150px;"></div>
-                                    <div class="fulll">
-                                        <h3>Full-Stack Web Development with <br> MERN & Smart Automation</h3>
-                                        <p>Learn MongoDB, Express.js, React.js, and <br> Node.js to build full-stack
-                                            applications, <br>integrating automation and AI-powered <br> web
-                                            interactions</p>
-                                    </div>
-                                </div>
-                                <div class="aa">
-                                    <div class="immg"><img
-                                            src="https://prosevo.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwebimg.6e5d774b.png&w=1920&q=75"
-                                            alt="" style="width: 150px;height: 150px;"></div>
-                                    <div class="fulll">
-                                        <h3>Full-Stack Web Development with <br> MERN & Smart Automation</h3>
-                                        <p>Learn MongoDB, Express.js, React.js, and <br> Node.js to build full-stack
-                                            applications, <br>integrating automation and AI-powered <br> web
-                                            interactions</p>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-
-
-
-                <div class="page5">
-                    <div style="text-align: center;">
-                        <h1>Gallery</h1>
-                        <p>Our gallery also highlights the recognition and awards we have received over the years. <br>
-                            These accolades are a testament to our dedication, hard work, and excellence in the IT
-                            <br>industry.
-                        </p>
-                    </div>
-                    <div class="dr">
-                        <div class="driving">
-
-
-                            <div class="class11"><img src="./Team01.ff9730b0.jpeg" alt=""
-                                    style="width: 430px;height: 450px; border-radius: 10px; margin-right: 10px; margin-left: 10px;"></div>
-                            <div
-                                style="width: 430px;height: 450px; border-radius: 10px;background-color: #383838;text-align: center;display: flex ;flex-direction: column;justify-content: center;">
-                                <h1 style="color: aliceblue;">Driving digital transformation</h1>
-                                <p style="color: grey;">in todays fast-paced and ever evolving digital <br>landscape,the
-                                    ability to adapt and innovate <br> is crusuial for sucsess.at our company we are at
-                                    the <br>forefront of driving digital transformation</p>
-                                <p style="color:#dbaa4f;">read more...</p>
-                            </div>
-                            <div class="class11"><img src="./Team01.ff9730b0.jpeg" alt=""
-                                    style="width: 430px;height: 450px; border-radius: 10px; margin-right: 10px; margin-left: 10px;"></div>
-
-                        </div>
-                        <div class="driving">
-
-
-
-                            <div
-                                style="width: 430px;height: 450px; border-radius: 10px;background-color: #383838;text-align: center;display: flex ;flex-direction: column;justify-content: center;">
-                                <h1 style="color: aliceblue;">Driving digital transformation</h1>
-                                <p style="color: grey;">in todays fast-paced and ever evolving digital <br>landscape,the
-                                    ability to adapt and innovate <br> is crusuial for sucsess.at our company we are at
-                                    the <br>forefront of driving digital transformation</p>
-                                <p style="color:#dbaa4f;">read more...</p>
-                            </div>
-                            <div class="class11"><img src="./Team01.ff9730b0.jpeg" alt=""
-                                    style="width: 350px;height: 450px; border-radius: 10px; margin-right: 10px; margin-left: 10px;"></div>
-                            <div
-                                style="width: 430px;height: 450px; border-radius: 10px;background-color: #383838;text-align: center;display: flex ;flex-direction: column;justify-content: center;">
-                                <h1 style="color: aliceblue;">Driving digital transformation</h1>
-                                <p style="color: grey;">in todays fast-paced and ever evolving digital <br>landscape,the
-                                    ability to adapt and innovate <br> is crusuial for sucsess.at our company we are at
-                                    the <br>forefront of driving digital transformation</p>
-                                <p style="color:#dbaa4f;">read more...</p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-
-
-            <div class="page6">
-                <div class="blurparent">
-                    <div class="header" style="text-align: center;padding-top: 50px;">
-                        <h1 style="color: #dbaa4f;">Contact <span style="color: white;">Us</span></h1>
-                    </div>
-                    <div class="lastfull">
-                        <div class="location" style="color: white;">
-                            <p style="color: white;">Cheerangan Tower, Zudio Building_1st Floor, opp. Maatil Juma
-                                Masjid, Vengara, <br>Kerala
-                                676304</p>
-                            <p>
-                                +9123455666
-                                +9123455667
-                            </p>
-                            <p>Contact@prosevo.com</p>
-                        </div>
-                        <div class="form">
-                            <form action="">
-                                <label for="">your name</label> <br>
-                                <input type="text" name="" id="" placeholder="name"
-                                    style="width: 500px;height: 40px;border-radius: 10px;"> <br>
-                                <label for="">your email</label> <br>
-                                <input type="text" name="" id="" placeholder="name@gmail.com"
-                                    style="width: 500px;height: 40px;border-radius: 10px;"> <br>
-                                <label for="">your messege</label><br>
-                                <textarea name="" id=""
-                                    style="width: 500px;height: 100px;border-radius: 10px;">leave a comment</textarea><br>
-                                <button
-                                    style="width: 500px;height: 40px;border-radius: 10px; background-color: #dbaa4f;">submit</button>
-
-
-
-
-                            </form>
-
-
-                        </div >
-                    </div>
-
-                </div>
-                <div class="footer">
-                    <div class="foottext">
-                        <div class="footle"><img src="https://prosevo.com/assets/logoprosevo.png" alt=""
-                                style="width: 30px; height: 30px; margin-top: 30px; margin-left: 60px;">
-                            <h1 style="color: white;">Prosevo Technologies</h1>
-                        </div>
-                        <div class="footri" style="color: white; padding-right: 60px;">
-                            <p>About <br>
-                                Prosevo <br>
-                                About Us
-                            </p>
-                            <p> Follow us <br>
-                                Facebook <br>
-                                Instagram
-                            </p>
-                            <p>Legal <br>
-                                Privacy Policy <br>
-                                Terms & Conditions</p>
-
-                        </div>
-                        
-                    </div>
-<hr width="90%";height="1px">
-                </div>
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
 
-</body>
+        <div class="parent2">
+            <div class="page2">
+                <div class="atprosevo">
+                    <h1 style="text-align: center; text-decoration: underline;">PROSEVO TECHNOLOGIES</h1>
+                    <p class="text">At Prosevo, we embody the entrepreneurial spirit, fortified by over 12 years of rich industry experience within our team. We go beyond merely developing software and ERP solutions; we architect transformative Odoo-based systems, cutting-edge websites, intuitive mobile applications, and dynamic e-commerce platforms designed to redefine industries and empower businesses.</p>
+                    <p class="text">Our expertise extends to digital marketing, enabling brands to amplify their online presence and engage effectively with their audiences. With a commitment to delivering scalable, innovative, and user-focused solutions, we ensure every project is tailored to meet the unique needs of our clients, driving growth and unlocking new opportunities.</p>
+                    <h3 style="font-style: italic; font-weight: 700;color: #dbaa4f;">Dive into a world where innovation never pauses, and our commitment to excellence is coded into every solution we deliver.</h3>
+                </div>
+                <div class="pic">
+                    <img src="https://prosevo.com/_next/static/media/imgoffice03.f886e971.jpg" alt="">
+                </div>
+            </div>
 
+            <div class="page3">
+                <div class="serice">
+                    <h1 style="color: #dbaa4f;">Services</h1>
+                    <p>At Prosevo, we provide tailored solutions to meet your unique needs.</p>
+                </div>
+                <div class="box">
+                    <div class="box1">
+                        <div class="boxx">
+                            <div class="img"></div>
+                            <div class="odoo">
+                                <h2>Odoo ERP Implementation & Customization</h2>
+                                <p>Empower your business with a fully customized odoo erp solution...</p>
+                            </div>
+                        </div>
+                        <div class="boxx">
+                            <div class="img"></div>
+                            <div class="odoo">
+                                <h2>Odoo ERP Implementation & Customization</h2>
+                                <p>Empower your business with a fully customized odoo erp solution...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="boxx">
+                            <div class="img"></div>
+                            <div class="odoo">
+                                <h2>Odoo ERP Implementation & Customization</h2>
+                                <p>Empower your business with a fully customized odoo erp solution...</p>
+                            </div>
+                        </div>
+                        <div class="boxx">
+                            <div class="img"></div>
+                            <div class="odoo">
+                                <h2>Odoo ERP Implementation & Customization</h2>
+                                <p>Empower your business with a fully customized odoo erp solution...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page4">
+            <div class="blurbox">
+                <div>
+                    <h1>Training <span style="color:#dbaa4f;"> & </span>Bootcamps</h1>
+                    <p>At Prosevo, we provide tailored solutions to meet your unique needs. Our comprehensive Courses support you from conception to execution and beyond.</p>
+                </div>
+                <div class="fullstack">
+                    <div class="leftfull">
+                        <div class="aa">
+                            <div class="immg">
+                                <img src="https://prosevo.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwebimg.6e5d774b.png&w=1920&q=75" alt="">
+                            </div>
+                            <div class="fulll">
+                                <h3>Full-Stack Web Development with MERN & Smart Automation</h3>
+                                <p>Learn MongoDB, Express.js, React.js, and Node.js to build full-stack applications, integrating automation and AI-powered web interactions</p>
+                            </div>
+                        </div>
+                        <div class="aa">
+                            <div class="immg">
+                                <img src="https://prosevo.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwebimg.6e5d774b.png&w=1920&q=75" alt="">
+                            </div>
+                            <div class="fulll">
+                                <h3>Full-Stack Web Development with MERN & Smart Automation</h3>
+                                <p>Learn MongoDB, Express.js, React.js, and Node.js to build full-stack applications, integrating automation and AI-powered web interactions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightfull">
+                        <div class="aa">
+                            <div class="immg">
+                                <img src="https://prosevo.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwebimg.6e5d774b.png&w=1920&q=75" alt="">
+                            </div>
+                            <div class="fulll">
+                                <h3>Full-Stack Web Development with MERN & Smart Automation</h3>
+                                <p>Learn MongoDB, Express.js, React.js, and Node.js to build full-stack applications, integrating automation and AI-powered web interactions</p>
+                            </div>
+                        </div>
+                        <div class="aa">
+                            <div class="immg">
+                                <img src="https://prosevo.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwebimg.6e5d774b.png&w=1920&q=75" alt="">
+                            </div>
+                            <div class="fulll">
+                                <h3>Full-Stack Web Development with MERN & Smart Automation</h3>
+                                <p>Learn MongoDB, Express.js, React.js, and Node.js to build full-stack applications, integrating automation and AI-powered web interactions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page5">
+            <div style="text-align: center; padding: 20px;">
+                <h1>Gallery</h1>
+                <p>Our gallery also highlights the recognition and awards we have received over the years. These accolades are a testament to our dedication, hard work, and excellence in the IT industry.</p>
+            </div>
+            <div class="dr">
+                <div class="driving">
+                    <div class="class11">
+                        <img src="https://prosevo.com/_next/static/media/Team01.ff9730b0.jpeg" alt="">
+                    </div>
+                    <div>
+                        <h1 style="color: aliceblue;">Driving digital transformation</h1>
+                        <p style="color: grey;">In today's fast-paced and ever evolving digital landscape, the ability to adapt and innovate is crucial for success. At our company we are at the forefront of driving digital transformation.</p>
+                        <p style="color:#dbaa4f;">read more...</p>
+                    </div>
+                    <div class="class11">
+                        <img src="https://prosevo.com/_next/static/media/Team01.ff9730b0.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="driving">
+                    <div>
+                        <h1 style="color: aliceblue;">Driving digital transformation</h1>
+                        <p style="color: grey;">In today's fast-paced and ever evolving digital landscape, the ability to adapt and innovate is crucial for success. At our company we are at the forefront of driving digital transformation.</p>
+                        <p style="color:#dbaa4f;">read more...</p>
+                    </div>
+                    <div class="class11">
+                        <img src="https://prosevo.com/_next/static/media/Team01.ff9730b0.jpeg" alt="">
+                    </div>
+                    <div>
+                        <h1 style="color: aliceblue;">Driving digital transformation</h1>
+                        <p style="color: grey;">In today's fast-paced and ever evolving digital landscape, the ability to adapt and innovate is crucial for success. At our company we are at the forefront of driving digital transformation.</p>
+                        <p style="color:#dbaa4f;">read more...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page6">
+            <div class="blurparent">
+                <div class="header" style="text-align: center; padding: 20px 0;">
+                    <h1 style="color: #dbaa4f;">Contact <span style="color: white;">Us</span></h1>
+                </div>
+                <div class="lastfull">
+                    <div class="location">
+                        <p>Cheerangan Tower, Zudio Building_1st Floor, opp. Maatil Juma Masjid, Vengara, Kerala 676304</p>
+                        <p>+9123455666<br>+9123455667</p>
+                        <p>Contact@prosevo.com</p>
+                    </div>
+                    <div class="form">
+                        <form action="">
+                            <label for="name">Your name</label>
+                            <input type="text" id="name" placeholder="name">
+                            
+                            <label for="email">Your email</label>
+                            <input type="email" id="email" placeholder="name@gmail.com">
+                            
+                            <label for="message">Your message</label>
+                            <textarea id="message" placeholder="Leave a comment"></textarea>
+                            
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="foottext">
+                <div class="footle">
+                    <img src="https://prosevo.com/assets/logoprosevo.png" alt="" style="width: 30px; height: 30px;">
+                    <h1 style="color: white; font-size: 1.5rem;">Prosevo Technologies</h1>
+                </div>
+                <div class="footri">
+                    <div>
+                        <p>About<br>
+                        Prosevo<br>
+                        About Us</p>
+                    </div>
+                    <div>
+                        <p>Follow us<br>
+                        Facebook<br>
+                        Instagram</p>
+                    </div>
+                    <div>
+                        <p>Legal<br>
+                        Privacy Policy<br>
+                        Terms & Conditions</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+</body>
 </html>
