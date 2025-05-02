@@ -15,6 +15,107 @@
             font-family: Arial, sans-serif;
         }
 
+
+
+
+        * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .navbar {
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      position: relative;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .logo h1 {
+      color: #dbaa4f;
+      font-size: 1.5rem;
+    }
+
+    .options {
+      display: flex;
+      gap: 20px;
+    }
+
+    .options a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .options a:hover,
+    .options a.active {
+      color: #dbaa4f;
+      text-decoration: underline;
+    }
+
+    /* Hamburger icon styles */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+    }
+
+    /* Mobile styles */
+    @media (max-width: 768px) {
+      .options {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.95);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      .options.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+
+
+
+
+
+
         .bcim {
             background-image: url(https://prosevo.com/assets/officeimg.jpg);
             width: 100%;
@@ -23,32 +124,8 @@
             background-position: center;
             padding-bottom: 30px;
         }
+    
 
-        .navbar {
-            width: 98%;
-            height: auto;
-            background-color: rgba(0, 0, 0, 0.705);
-            border: 1px solid rgba(255, 255, 255, 0.39);
-            border-radius: 5px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            margin: 10px auto;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .options {
-            display: flex;
-            gap: 20px;
-            color: rgba(255, 255, 255, 0.645);
-        }
 
         .more {
             width: 90%;
@@ -328,6 +405,7 @@
             .navbar {
                 flex-direction: row;
                 height: 50px;
+          
             }
             
             .options {
@@ -422,30 +500,38 @@
     <div class="parent">
         <div class="bcim">
             <div class="page1">
-                <div class="navbar">
+                <nav class="navbar">
                     <div class="logo">
-                        <img src="https://prosevo.com/assets/logoprosevo.png" alt="" style="width: 30px; height: 30px;">
-                        <h1 style="color: #dbaa4f; font-size: 1.5rem;">prosevo.</h1>
+                      <img src="https://prosevo.com/assets/logoprosevo.png" alt="Logo" />
+                      <h1>prosevo.</h1>
                     </div>
-                    <div class="options">
-                        <h4 style="color: #dbaa4f;">Home</h4>
-                        <h4>Services</h4>
-                        <h4>Solutions</h4>
-                        <h4>Training</h4>
-                        <h4>Academy</h4>
-                        <h4>Gallery</h4>
-                        <h4>Contact</h4>
+                
+                    <div class="hamburger" onclick="toggleMenu()">
+                      <div></div>
+                      <div></div>
+                      <div></div>
                     </div>
+                
+                    <div class="options" id="nav-options">
+                      <a href="#" class="active">Home</a>
+                      <a href="#">Services</a>
+                      <a href="#">Solutions</a>
+                      <a href="#">Training</a>
+                      <a href="#">Academy</a>
+                      <a href="#">Gallery</a>
+                      <a href="#">Contact</a>
+                    </div>
+                  </nav>
                 </div>
                 <div class="more">
                     <div class="left">
-                        <h1>Identify the Problem, find out the Solution and Evolve your business</h1>
-                        <p style="color:#dfdddb;font-size:1.2rem;">Evolve your business globally with the right software solution</p>
-                        <p>At our company, we provide innovative and customized software solutions to help your business grow and succeed in the global market. Our expertise spans across various industries, ensuring that we understand your unique challenges and deliver the perfect solutions.</p>
+                        <h1 style="margin-top: 10px;">Identify the Problem, find out the Solution and Evolve your business</h1>
+                        <p style="color:#dfdddb;font-size:15px; margin-top: 10px;">Evolve your business globally with the right software solution</p>
+                        <p style="margin-top: 100px;">At our company, we provide innovative and customized software solutions to help your business grow and succeed in the global market. Our expertise spans across various industries, ensuring that we understand your unique challenges and deliver the perfect solutions.</p>
                         <button>More info</button>
                     </div>
                     <div class="right">
-                        <img src="https://prosevo.com/assets/mainimg2.png" alt="">
+                        <img src="https://prosevo.com/assets/mainimg2.png" alt="" style="margin-top: -100px;">
                     </div>
                 </div>
             </div>
@@ -454,8 +540,8 @@
         <div class="parent2">
             <div class="page2">
                 <div class="atprosevo">
-                    <h1 style="text-align: center; text-decoration: underline;">PROSEVO TECHNOLOGIES</h1>
-                    <p class="text">At Prosevo, we embody the entrepreneurial spirit, fortified by over 12 years of rich industry experience within our team. We go beyond merely developing software and ERP solutions; we architect transformative Odoo-based systems, cutting-edge websites, intuitive mobile applications, and dynamic e-commerce platforms designed to redefine industries and empower businesses.</p>
+                    <h1 style="text-align: center; text-decoration: underline; margin-top: -90px;">PROSEVO TECHNOLOGIES</h1>
+                    <p class="text" style="margin-top: 100px;">At Prosevo, we embody the entrepreneurial spirit, fortified by over 12 years of rich industry experience within our team. We go beyond merely developing software and ERP solutions; we architect transformative Odoo-based systems, cutting-edge websites, intuitive mobile applications, and dynamic e-commerce platforms designed to redefine industries and empower businesses.</p>
                     <p class="text">Our expertise extends to digital marketing, enabling brands to amplify their online presence and engage effectively with their audiences. With a commitment to delivering scalable, innovative, and user-focused solutions, we ensure every project is tailored to meet the unique needs of our clients, driving growth and unlocking new opportunities.</p>
                     <h3 style="font-style: italic; font-weight: 700;color: #dbaa4f;">Dive into a world where innovation never pauses, and our commitment to excellence is coded into every solution we deliver.</h3>
                 </div>
@@ -558,41 +644,55 @@
         </div>
 
         <div class="page5">
-            <div style="text-align: center; padding: 20px;">
+            <div style="text-align: center;">
                 <h1>Gallery</h1>
-                <p>Our gallery also highlights the recognition and awards we have received over the years. These accolades are a testament to our dedication, hard work, and excellence in the IT industry.</p>
+                <p>Our gallery also highlights the recognition and awards we have received over the years. <br>
+                    These accolades are a testament to our dedication, hard work, and excellence in the IT
+                    <br>industry.
+                </p>
             </div>
             <div class="dr">
                 <div class="driving">
-                    <div class="class11">
-                        <img src="https://prosevo.com/_next/static/media/Team01.ff9730b0.jpeg" alt="">
-                    </div>
-                    <div>
+
+
+                    <div class="class11" style="height: 440px; background-image: url(https://prosevo.com/_next/static/media/Team02.7f689b88.jpeg) ;"></div>
+                    <div
+                        style="height: 450px; border-radius: 10px;background-color: #383838;text-align: center;display: flex ;flex-direction: column;justify-content: center;">
                         <h1 style="color: aliceblue;">Driving digital transformation</h1>
-                        <p style="color: grey;">In today's fast-paced and ever evolving digital landscape, the ability to adapt and innovate is crucial for success. At our company we are at the forefront of driving digital transformation.</p>
+                        <p style="color: grey;">in todays fast-paced and ever evolving digital <br>landscape,the
+                            ability to adapt and innovate <br> is crusuial for sucsess.at our company we are at
+                            the <br>forefront of driving digital transformation</p>
                         <p style="color:#dbaa4f;">read more...</p>
                     </div>
-                    <div class="class11">
-                        <img src="https://prosevo.com/_next/static/media/Team01.ff9730b0.jpeg" alt="">
-                    </div>
+                    <div class="class11" style="height: 450px; background-image: url(https://prosevo.com/_next/static/media/Team04.cb1b23b9.jpeg) ;"></div>
+
                 </div>
                 <div class="driving">
-                    <div>
+
+
+
+                    <div
+                        style="  height: 450px;  border-radius: 10px;background-color: #383838;text-align: center;display: flex ;flex-direction: column;justify-content: center;">
                         <h1 style="color: aliceblue;">Driving digital transformation</h1>
-                        <p style="color: grey;">In today's fast-paced and ever evolving digital landscape, the ability to adapt and innovate is crucial for success. At our company we are at the forefront of driving digital transformation.</p>
+                        <p style="color: grey;">in todays fast-paced and ever evolving digital <br>landscape,the
+                            ability to adapt and innovate <br> is crusuial for sucsess.at our company we are at
+                            the <br>forefront of driving digital transformation</p>
                         <p style="color:#dbaa4f;">read more...</p>
                     </div>
-                    <div class="class11">
-                        <img src="https://prosevo.com/_next/static/media/Team01.ff9730b0.jpeg" alt="">
-                    </div>
-                    <div>
+                    <div class="class11" style="height: 450px; background-image: url(https://prosevo.com/_next/static/media/Team04.cb1b23b9.jpeg) ;"></div>
+                    <div
+                        style="height: 450px; border-radius: 10px;background-color: #383838;text-align: center;display: flex ;flex-direction: column;justify-content: center;">
                         <h1 style="color: aliceblue;">Driving digital transformation</h1>
-                        <p style="color: grey;">In today's fast-paced and ever evolving digital landscape, the ability to adapt and innovate is crucial for success. At our company we are at the forefront of driving digital transformation.</p>
+                        <p style="color: grey;">in todays fast-paced and ever evolving digital <br>landscape,the
+                            ability to adapt and innovate <br> is crusuial for sucsess.at our company we are at
+                            the <br>forefront of driving digital transformation</p>
                         <p style="color:#dbaa4f;">read more...</p>
                     </div>
                 </div>
             </div>
+
         </div>
+    </div>
 
         <div class="page6">
             <div class="blurparent">
